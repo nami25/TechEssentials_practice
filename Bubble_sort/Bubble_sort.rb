@@ -7,9 +7,7 @@ def bubble_sort(a)
       while i <= a.length - t - 1
     
         if a[i] > a[i+1]
-          temp = a[i]
-          a[i] = a[i+1]
-          a[i+1] = temp
+          a[i], a[i+1] = a[i+1], a[i]
         end
     
         i += 1
